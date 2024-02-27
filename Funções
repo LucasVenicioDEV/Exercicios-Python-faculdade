@@ -1,0 +1,107 @@
+# 
+# ## Exercícios - Loops e Condiconais
+# 
+# # exercicio 1
+# 
+# # pergunta = input("Digite o dia da semana:")
+# # Dia = pergunta.upper()[0:3]
+# # if Dia == "SAB" or Dia == "DOM":
+# # print("Hoje é dia de descanso.")
+# # else:
+# # print("Hoje é dia de trabalhar.")
+# 
+# # Exercício 2
+# 
+# # FrutasVermelhas = ["Morango","Amora","melancia","cereja" ,"maça"]
+# # for i in FrutasVermelhas:
+# # if i == "Morango":
+# # print("tem morango na lista")
+# # else:
+# # print("Nao tem morango")
+# 
+# 
+# 
+# # Exercício 3 - Crie uma função que receba como parâmetro uma lista de 4 elementos, adicione 2 elementos a lista e
+# # imprima a lista
+# 
+# # Lista1Teste = [1,2,3]
+# # Lista2Teste = [4,5,6]
+# # def AdicionarValoresALista(lista1,lista2):
+# #     for i in lista2:
+# #         lista1.append(i)
+# #
+# #     return lista1
+# #
+# #
+# # AdicionarValoresALista(Lista1Teste,Lista2Teste)
+# # print(Lista1Teste)
+# 
+# # Exercício 4 - Crie uma função que receba um argumento formal e uma possível lista de elementos. Faça duas chamadas
+# # à função, com apenas 1 elemento e na segunda chamada com 4 elementos
+# 
+# # def FuncaoArgumento(arg1, *args):
+# #     print("Argumento formal:", arg1)
+# #     if args:
+# #         print("Lista de elementos:", args)
+# #     else:
+# #         print("Nenhum elemento adicional fornecido.")
+# #
+# # FuncaoArgumento("Chamada 1 com apenas 1 elemento")
+# # FuncaoArgumento("Chamada 2 com 4 elementos", 1, 2, 3, 4)
+# 
+# # Exercício 5 - Crie uma função anônima e atribua seu retorno a uma variável chamada soma. A expressão vai receber 2
+# # números como parâmetro e retornar a soma deles
+# 
+# # soma = lambda num1, num2: num1 + num2
+# 
+# 
+# # Exercício 6 - Execute o código abaixo e certifique-se que compreende a diferença entre variável global e local
+# # total = 0
+# # def soma( arg1, arg2 ):
+# #     total = arg1 + arg2;
+# #     print ("Dentro da função o total é: ", total)
+# #     return total;
+# #
+# #
+# # soma( 10, 20 );
+# # print ("Fora da função o total é: ", total)
+# 
+# ##entendi. kk
+# 
+# # Exercício 7 - Abaixo você encontra uma lista com temperaturas em graus Celsius
+# # Crie uma função anônima que converta cada temperatura para Fahrenheit
+# # Dica: para conseguir realizar este exercício, você deve criar sua função lambda, dentro de uma função
+# # (que será estudada no próximo capítulo). Isso permite aplicar sua função a cada elemento da lista
+# # Como descobrir a fórmula matemática que converte de Celsius para Fahrenheit? Pesquise!!!
+# # Celsius = [39.2, 36.5, 37.3, 37.8]
+# # Fahrenheit = map(lambda x: (float(9)/5)*x + 32, Celsius)
+# # print (list(Fahrenheit))
+# #
+# 
+# 
+# # Exercício 8
+# # Crie um dicionário e liste todos os métodos e atributos do dicionário
+# 
+# # dicionario = {'Lucas': 'Programador','Sarah':'Esteticista',}
+# # print(dir(dicionario))
+# 
+# 
+# import pandas as pd
+# 
+# 
+# def summarize_data(file_path):
+#     # Carregar o arquivo CSV usando pandas
+#     data = pd.read_csv(file_path)
+# 
+#     # Obter o resumo estatístico descritivo usando o método describe()
+#     summary = data.describe()
+# 
+#     return summary
+# 
+# 
+# # Chamando a função com o arquivo "binary.csv"
+# file_path = "C:\Users\Previx\Downloads\Orcust Runick Bystial.ydk"
+# summary = summarize_data(file_path)
+# print(summary)
+# 
+# 
